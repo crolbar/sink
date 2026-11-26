@@ -24,8 +24,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
   src = fetchFromGitHub {
     owner = "crolbar";
     repo = "sink";
-    rev = "10d7a2be7261052cc55778ee08dbe611907fc661";
-    sha256 = "sha256-wy9i/DhlexBqM4dc0jjIxy4LnXoeX1Cz+wQA3n7z/fA=";
+    rev = "b58e95e90c4e4c892041bb99f725996e24ce993e";
+    sha256 = "sha256-IVXKKjWxcXmNwuzDAs+mqRk2tI1EmLv9hezKN00saTQ=";
   };
   npmDeps = fetchNpmDeps {
     inherit (finalAttrs) src;
