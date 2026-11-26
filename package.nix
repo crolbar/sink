@@ -62,6 +62,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
 
     mkdir -p $out/bin
     cp ./target/release/sink $out/bin
+    mkdir -p $out/share/applications
+    cp ./packaging/linux/us.echo.Sink.desktop $out/share/applications
 
     runHook postInstall
   '';
